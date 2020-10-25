@@ -1,24 +1,26 @@
 <template>
-  <div class="page">
+  <div class="page" style="padding-top: 60px;">
       <h2 class="title is-2">Feed Page</h2>
 
         <div class="columns">
-            <div class="column is-two-thirds">
-                <Post v-for=" (x, i) in posts " 
-                      :key="i"
-                      :post="x" /> 
-            </div>
-            <div class="column is-one-third">
-                <Sidebar />
-            </div>
+          <div class="column is-one-thirds">
+              <Sidebar />
+          </div>
+          <div class="column is-two-thirds">
+              <Post v-for=" (x, i) in posts " 
+                :key="i"
+                :i="i"
+                :post="x"/>
+          </div>  
         </div>
   </div>
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
-import Post from "@/components/Post";
-import { posts } from "@/models/feed";
+import Sidebar from "@/components/Sidebar"
+import Post from "@/components/Post"
+import {posts} from "@/models/feed"
+
 export default {
     data(){
         return {
@@ -32,7 +34,7 @@ export default {
 </script>
 
 <style>
-    .card {
-        margin-bottom: 30px ;
-    }
-</style>
+  .card {
+    margin-bottom: 15px;
+  }
+</style>>

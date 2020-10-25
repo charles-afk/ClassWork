@@ -1,23 +1,24 @@
 <template>
-  
-<nav class="navbar container is-fixed-top is-info" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="../assets/logo.png" height="28">
-    </a>
 
-    <a role="button" class="navbar-burger burger" :class="{ 'is-active': isActive }" @click="isActive = !isActive" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <nav class="navbar container is-fixed-top is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+            <img src="../assets/logo.png" height="28">
+        </a>
+
+    <a role="button" class="navbar-burger burger" :class="{ 'is-active': isActive}" @click="isActive = !isActive" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu "  :class="{ 'is-active': isActive }">
+  <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': isActive}">
     <div class="navbar-start">
-      <router-link to="/"  class="navbar-item" >Home</router-link>
-      <router-link to="/about"  class="navbar-item" >About</router-link>
-      <router-link to="/feed"  class="navbar-item" >Feed</router-link>
+
+    <router-link to="/" class="navbar-item">Home</router-link> 
+    <router-link to="/about" class="navbar-item">About</router-link>
+    <router-link to="/feed" class="navbar-item">Feed</router-link>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
@@ -44,31 +45,27 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button">
-            <strong>Sign up</strong>
-          </a>
-            <router-link to="/login"  class="button is-light" >
-                Log in
-            </router-link>
-        </div>
+        <LoginBadge />
       </div>
     </div>
   </div>
 </nav>
-
-
 </template>
 
 <script>
+import LoginBadge from "@/components/LoginBadge"
+
 export default {
   data: ()=> ({
-      isActive: false
+    isActive: false
   }),
-  methods: {
+  methods: {},
+  components: {
+    LoginBadge
   }
 }
 </script>
 
 <style>
+
 </style>

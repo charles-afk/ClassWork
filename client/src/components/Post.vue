@@ -1,15 +1,15 @@
 <template>
-<div class="card">
+  <div class="card">
   <div class="card-image">
     <figure class="image">
-      <img :src="post.url">
+      <img src="post.url" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
     <div class="media">
       <div class="media-left">
-        <figure class="image is-48x48 ">
-          <img :src="post.owner.profile" alt="Placeholder image">
+        <figure class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
         </figure>
       </div>
       <div class="media-content">
@@ -20,8 +20,8 @@
 
     <div class="content">
       {{post.message}}
-      <br>
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+ 
+      <time datetime="2016-1-1">11:09 PM - {{i}} Jan 2016</time>
     </div>
   </div>
 </div>
@@ -29,11 +29,21 @@
 
 <script>
 export default {
-    props: {
-        post: Object
-    }
+  props: {
+      post: Object,
+      i: Number
+  }
 }
 </script>
 
 <style>
+  time {
+      font-size: smaller;
+      font-style: italic;
+      float: right;
+  }
+
+  .card .card-content .media {
+      margin: 0;
+  }
 </style>

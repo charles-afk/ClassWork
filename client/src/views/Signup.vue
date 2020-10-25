@@ -25,8 +25,8 @@
 </div>
 <div class="field">
   <p class="control">
-    <button class="button is-success" @click.prevent="login">
-      Login
+    <button class="button is-success">
+      Sign Up
     </button>
   </p>
 </div>
@@ -36,19 +36,8 @@
 </template>
 
 <script>
-import session from "@/models/session";
-
 export default {
-  methods: {
-    login(){
-      session.user = {
-        name:'Charles Agudelo',
-        handle:'charles-afk',
-        profile:''
-      }
-      this.$router.push('feed')
-    }
-  }
+
 }
 </script>
 
