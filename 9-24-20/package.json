@@ -1,0 +1,19 @@
+{
+  "name": "9-24-20",
+
+  "scripts": {
+    "dev": "nodemon --watch server server/index.js",
+    "start": "node server/index.js"
+  },
+
+  "license": "ISC",
+
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0"
+  },
+
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
