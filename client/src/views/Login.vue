@@ -46,6 +46,7 @@ export default {
         handle:'charles-afk',
         profile:''
       }
+      session.addNotification('Yay! You logged in', 'success')
       this.$router.push('feed')
     }
   }

@@ -41,4 +41,7 @@ export default {
   .media .image img {
       width: auto;
   }
+  .media-content {
+        line-height: .95rem;
+    }
 </style>

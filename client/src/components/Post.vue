@@ -2,7 +2,7 @@
   <div class="card">
   <div class="card-image">
     <figure class="image">
-      <img src="post.url" alt="Placeholder image">
+      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
