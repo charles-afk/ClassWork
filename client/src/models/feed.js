@@ -1,27 +1,27 @@
 export const posts = [
     {
       url: '',
-      message:'hello world',
+      message:'',
       owner: {
-        name:'John Doe',
+        name:'Charles Agudelo',
         handle:'charles-afk',
         profile:''
       },
     },
     {
       url: '',
-      message:'hello world',
+      message:'',
       owner: {
-        name:'John Doe',
+        name:'Charles Agudelo',
         handle:'charles-afk',
         profile:''
       },
     },
     {
       url: '',
-      message:'hello world',
+      message:'',
       owner: {
-        name:'John Doe',
+        name:'Charles Agudelo',
         handle:'charles-afk',
         profile:''
       },
